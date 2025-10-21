@@ -26,34 +26,20 @@
     margin-bottom: 0; 
 }
 
-.accordion-content { 
+
+
+.accordion__content { 
    font-size: 16px;
    line-height: 1.5;
    color: #495057;
-   overflow: hidden; 
-
-
-
-
-}
-
-.accordion-content1 { 
-   font-size: 16px;
-   line-height: 1.5;
-   color: #495057;
-   overflow: hidden; 
-    max-height: 0; 
+   
 
 
 
 }
 
-.accordion-title { 
-    padding-top: 24px;
-}
 
-
-summary {
+.accordion__header {
     list-style: none; 
     cursor: pointer; 
     outline: none; 
@@ -62,4 +48,9 @@ summary {
 
 .accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
     display: none;
+
 }
+
+
+
+
