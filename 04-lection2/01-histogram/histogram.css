@@ -43,40 +43,40 @@
     margin-top:19px;
 }
 
-.chart { 
+.histogram__chart { 
     display : flex;
     align-items: flex-end;
     height: 50px;
 }
 
 
-.chart__column { 
+.histogram__column { 
     background-color:blue ;
     margin-right: 1px;
 }
 
 
-.chart__column-short {
+.histogram__column_short {
     height: 20%;
     flex-grow: 0.2; 
 }
 
-.chart__column-medium {
+.histogram__column_medium {
     height: 40%;
     flex-grow: 0.4;
 }
 
-.chart__column-large {
+.histogram__column_large {
     height: 60%;
     flex-grow: 0.6;
 }
 
-.chart__column-huge { 
+.histogram__column_huge { 
     height: 80%;
     flex-grow: 0.8;
 }
 
-.chart__column-full {
+.histogram__column_full {
     height: 100%;
     flex-grow: 1;
 }
