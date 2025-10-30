@@ -12,7 +12,7 @@
     align-items: flex-start; 
 }
 
-.header__left { 
+.histogram__header-item { 
     display: flex;
     flex-direction: column; 
 }
