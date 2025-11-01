@@ -1,7 +1,8 @@
 .skeleton { 
-    padding: 24px 32px 40px; 
+    padding: 32px 40px 32px 24px; 
     border: 1px solid #acb5db; 
     border-radius: 8px; 
+    
 }
 
 .skeleton__header { 
@@ -14,8 +15,10 @@
 .skeleton__column { 
     display:flex;
     flex-direction: column;
-    gap: 8px;
     flex-grow: 1;
+    gap: 8px;
+    
+    
 }
 
 .skeleton__image {
@@ -31,7 +34,7 @@
 .skeleton__line { 
     background-color: #d0d0d0;
     height: 20px;
-    gap: 8px;
+    
     
     
 }
@@ -43,7 +46,7 @@
     
 }
 
-.skeleton__line_large {  
+.skeleton__line_medium {  
     width: 40%;
    
 
@@ -52,7 +55,8 @@
 
 
  
-.skeleton__line_medium { 
-    width: 100%;  
-    margin-top: 8px;
+.skeleton__line_large { 
+    width: 100%;
+    margin-bottom: 8px;  
+    
 }
