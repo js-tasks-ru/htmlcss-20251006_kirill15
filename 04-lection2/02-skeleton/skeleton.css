@@ -1,0 +1,58 @@
+.skeleton { 
+    padding: 24px 32px 40px; 
+    border: 1px solid #acb5db; 
+    border-radius: 8px; 
+}
+
+.skeleton__header { 
+    display: flex; 
+    align-items: flex-start; 
+}
+
+
+
+.skeleton__column { 
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.skeleton__image {
+    background-color: #d0d0d0;  
+    border-radius: 50%; 
+    width: 64px;  
+    height: 64px; 
+    margin-right: 16px; 
+    margin-bottom: 24px;
+}
+
+
+.skeleton__line { 
+    background-color: #d0d0d0;
+    height: 20px;
+    gap: 8px;
+    
+    
+}
+
+.skeleton__line_small {  
+    width: 30%; 
+    
+    
+    
+}
+
+.skeleton__line_large {  
+    width: 40%;
+   
+
+    
+}
+
+
+ 
+.skeleton__line_medium { 
+    width: 100%;  
+    margin-top: 8px;
+}
