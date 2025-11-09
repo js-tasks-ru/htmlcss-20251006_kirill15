@@ -5,25 +5,22 @@
 }
 
 
-
-
 .tooltip__trigger { 
-
-
+    
 }
 
 
-.tooltip__icon { 
+.tooltip__icon  { 
 
 }
 
 .tooltip__bubble { 
     display: none;
 
-    /* Tool Tip */
+    
 
 width: 129px;
-/* Helper Text */
+
 
 position: absolute;
 font-family: 'Inter';
