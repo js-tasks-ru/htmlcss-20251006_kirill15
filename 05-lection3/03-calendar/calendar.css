@@ -3,12 +3,24 @@ background: #FFFFFF;
 border: 1px solid #ACB5BD;
 border-radius: 8px;
 width: 304px;
-height: 324px;
-padding: 28px 36px;
-display:grid;
+padding: 28px 26px 32px;
+display:flex;
+flex-direction: column;
+gap:24px;
 
 
 }
+
+.calendar__title {
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+
+    
+}
+
 
 
 .calendar__wrapper { 
@@ -22,10 +34,12 @@ display:grid;
 
 
 .calender__item { 
-    display: grid;            /* Используем grid для центрирования текста в ячейках */
-    justify-items: center;    /* Горизонтальное центрирование текста в ячейках */
+    display: grid;            
+    justify-items: center;    
     align-items: center; 
-    color: #334d6e    
+    color: #334d6e; 
+    font-family: 'Source Sans Pro';
+    padding: 10px; 
    
 }
 
@@ -33,7 +47,8 @@ display:grid;
 .calendar__item_day { 
     display: grid;
     justify-items: center;
-    color: #90a0b7 ;
+    color: #90a0b7;
+
 }
 
 
@@ -47,15 +62,7 @@ display:grid;
     background-color: #a0b1f5;
 }
 
-.calendar__title {
-    font-family: 'Inter';
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    row-gap: 24px;
 
-    
-}
 
 
 
