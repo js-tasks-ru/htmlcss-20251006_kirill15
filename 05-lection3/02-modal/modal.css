@@ -1,15 +1,4 @@
-.container {
 
-
-}
-
-.modal-open {
-    background-color: #4263eb;
-    color: white;
-    height: 48px;
-    border-radius: 8px;
-    
-}
 
 .modal {
     height: 100vh; 
@@ -22,10 +11,8 @@
 
 .modal__container {
     background-color: white;
-    border: 2px solid #ffffff;
-    padding: 16px;
-    width: 428px;
-    height: auto;
+    border-radius: 8px;
+    max-width: 428px;
     position: absolute; 
     left: 50%; 
     top: 50%; 
@@ -38,7 +25,7 @@
     align-items: center;
 }
 
-.modal__area {
+.modal__content {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -47,7 +34,7 @@
     color: #495057;
 }
 
-.modal__content {
+.modal__title {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -56,7 +43,8 @@
     color: #334D6E;
 }
 
-.modal-close {
+.modal__close {
     cursor: pointer;
     background-color: transparent;
+    border:none;
 }
