@@ -2,14 +2,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-image: url('public/forest_400.jpg');
 }
 
 
-@media (min-width: 400px) {
-    body {
-        background-image: url('public/forest_400.jpg');
-    }
-}
+
 
 
 @media (min-width: 768px) {
