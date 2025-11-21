@@ -65,10 +65,7 @@ color: #495057;
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control { 
 
-    border-color:  #dde2e5 ;
-    background-color: #dde2e5;
-    opacity: 0.5;
-    cursor: not-allowed;
+    color:  #dde2e5 ;
 
 }
 
@@ -86,6 +83,10 @@ color: #DDE2E5;
 
 
 }
+
+
+
+
 
 
 
