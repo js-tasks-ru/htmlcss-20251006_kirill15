@@ -1,8 +1,5 @@
-.radio__wrapper {
-    display:flex;
-    flex-direction: row;
-    gap: 12px;
-}
+
+
 .radio__state { 
     display: flex;
     align-items: center;
@@ -50,7 +47,7 @@ color: #495057;
 .radio__input:checked  ~ .radio__state .radio__control { 
 
     border-color: #4263eb;
-    border: 2px solid #4263eb
+    border: 2px solid #4263eb;
 
     
 
@@ -58,13 +55,13 @@ color: #495057;
 
 
 .radio__input:checked ~ .radio__state .radio__icon { 
-    display:block
+    display:block;
 }
 
 
 .radio__input { 
     position: absolute;
-    left: -100vh
+    left: -100vh;
 }
 
 
@@ -76,12 +73,6 @@ color: #495057;
 
 .radio__input:disabled ~ .radio__state .radio__label { 
 
-    
-font-family: 'Inter' , sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
 color: #DDE2E5;
 
 
