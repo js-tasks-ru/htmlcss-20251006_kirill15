@@ -73,3 +73,8 @@ color: #495057;
     background-color: #DDE2E5;
     pointer-events:none;
 }
+
+
+.toggler__input:focus ~ .toggler__state .toggler__label { 
+    text-decoration: underline;
+}
