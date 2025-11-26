@@ -1,4 +1,4 @@
-.text { 
+.footer__wrapper { 
 
     display:flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
 }
 
 
-.text__title { 
+.footer__title { 
     
 font-family: 'Inter';
 font-style: normal;
@@ -25,7 +25,7 @@ text-align: center;
 
 }
 
-.text__content {
+.footer__content {
     
 font-family: 'Inter';
 font-style: normal;
