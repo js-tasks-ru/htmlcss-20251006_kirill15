@@ -1,0 +1,16 @@
+
+
+.card { 
+    width: 350px;
+    height: 367px;
+    border: 1px solid green;
+    border-radius: 12px;
+    
+}
+
+
+.preview__inner { 
+    display:flex;
+    flex-wrap: wrap;
+    gap:30px
+}
