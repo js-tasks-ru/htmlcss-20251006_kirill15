@@ -1,0 +1,39 @@
+.input1 { 
+    width: 350px;
+    height: 58px;
+    border-radius: 8px;
+}
+.input:focus { 
+    border-color: #4263eb;
+}
+
+
+.input:disabled { 
+    color: #dde2e5;
+    pointer-events:none;
+
+}
+
+
+.input__susses { 
+    color: #dde2e5;
+}
+
+
+.input__susses:focus { 
+
+    color: green;
+
+}
+
+.input__invalid { 
+    
+    border-color: red;
+
+}
+
+.input__invalid:focus { 
+
+    border-color: darkred;
+
+}
