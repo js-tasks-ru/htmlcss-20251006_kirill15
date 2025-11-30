@@ -1,4 +1,9 @@
-.input1 { 
+.form__field { 
+    padding: 2px;
+}
+
+
+.form__input { 
     width: 350px;
     height: 58px;
     border-radius: 8px;
@@ -15,12 +20,12 @@
 }
 
 
-.input__susses { 
+.input__success { 
     color: #dde2e5;
 }
 
 
-.input__susses:focus { 
+.input__success:focus { 
 
     color: green;
 
@@ -36,4 +41,8 @@
 
     border-color: darkred;
 
+}
+
+.input__invalid:invalid { 
+    
 }
