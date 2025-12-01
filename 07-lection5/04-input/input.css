@@ -1,5 +1,5 @@
 .form { 
-    padding: 3px;
+    padding-bottom: 39px;
 }
 
 
@@ -9,6 +9,35 @@
     border-radius: 8px;
 }
 
+.input__icon {
+    position: relative;
+    width: 350px;
+     
+}
+
+
+.icon {
+
+position: absolute;
+right: 16px;
+top: calc(50% - 24px/2);
+
+
+}
+
+
+.form__label { 
+    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+text-transform: uppercase;
+color: #ACB5BD;
+
+
+}
 
 .form_success { 
     
@@ -25,8 +54,10 @@
 
 
 .form_invalid:focus {
+
+    border-color:#f03d3e;
     
-    border-color: red;
+    
 
 }
 
