@@ -1,5 +1,5 @@
-.form__field { 
-    padding: 2px;
+.form { 
+    padding: 3px;
 }
 
 
@@ -8,41 +8,31 @@
     height: 58px;
     border-radius: 8px;
 }
-.input:focus { 
-    border-color: #4263eb;
+
+
+.form_success { 
+    
+}
+
+.form_success:focus { 
+
 }
 
 
-.input:disabled { 
-    color: #dde2e5;
-    pointer-events:none;
+.form_invalid { 
 
 }
 
 
-.input__success { 
-    color: #dde2e5;
-}
-
-
-.input__success:focus { 
-
-    color: green;
-
-}
-
-.input__invalid { 
+.form_invalid:focus {
     
     border-color: red;
 
 }
 
-.input__invalid:focus { 
-
-    border-color: darkred;
+.form__input:disabled { 
 
 }
 
-.input__invalid:invalid { 
-    
-}
+
+
