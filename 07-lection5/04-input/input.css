@@ -1,12 +1,7 @@
 
-
-.form__input { 
-    width: 350px;
-    height: 58px;
-    border-radius: 8px;
-
+.form { 
+    position: relative;
 }
-
 .form__icon {
     position: absolute;
     right: 16px;
