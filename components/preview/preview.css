@@ -1,0 +1,12 @@
+.preview { 
+    padding: 68px  0;
+    background-color:  #F9FAFC;
+    
+}
+
+
+.preview__inner { 
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
