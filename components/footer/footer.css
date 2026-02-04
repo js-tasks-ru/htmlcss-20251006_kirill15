@@ -4,7 +4,6 @@
     background-color: #ffffff;
 }
 
-
 .footer__wrapper { 
     max-width: 640px;
     margin: 0 auto;
@@ -17,7 +16,6 @@
 }
 
 
-
 .footer__title { 
     
 font-family: 'Inter';
@@ -28,10 +26,7 @@ line-height: 48px;
 color: #212429;
 text-align: center;
 
-
 }
-
-
 
 
 .footer__content {
