@@ -1,14 +1,30 @@
-.header { 
-    
+.header {
     background-color: #ffffff;
     padding: 96px 0 77px;
-
+    position: relative;
 }
 
-.header__title { 
-    font-family: Inter ,sans-serif;
+.header__row {
+   display:flex;
+   flex-direction: column;
+   gap:40px;
+   
+   
+}
+
+.header__title {
+    font-family: Inter, sans-serif;
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-
+    margin-bottom: 0;
 }
+
+.header__tabs {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    padding:0;
+    width: 100%;
+}
+

@@ -1,0 +1,56 @@
+ .tabs__scroller { 
+    display: flex;
+    flex-direction:row;
+    gap:40px;
+}
+
+ .tab-radio__input { 
+    position:absolute;
+    left: -100vw;
+}
+
+
+.tab-radio__control { 
+    width:117px;
+    height: 37px;
+    
+}
+
+
+.tab-radio__label { 
+    
+width: 117px;
+height: 24px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #ACB5BD;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.tab-radio__input:checked ~ .tab-radio__state .tab-radio__control { 
+    border-bottom: 5px solid #212429;
+}
+
+
+.tab-radio__input:checked ~ .tab-radio__state .tab-radio__label { 
+    color: #212429;
+}
+
+
+
+.tab-radio__input:hover ~ .tab-radio__state .tab-radio__control { 
+    border-bottom: 5px solid #212429;
+}
+
+
+.tab-radio__input:hover ~ .tab-radio__state .tab-radio__label { 
+    color: #212429;
+}
+
+
