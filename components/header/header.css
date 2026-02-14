@@ -4,6 +4,19 @@
     position: relative;
 }
 
+
+.header__elements { 
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__components { 
+    display:flex;
+    flex-direction: row;
+    gap:12px;
+}
+
 .header__row {
    display:flex;
    flex-direction: column;
