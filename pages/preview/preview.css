@@ -1,0 +1,36 @@
+.preview { 
+    padding: 32px  0;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    gap:56px
+}
+
+
+.preview__inner { 
+    background-color:#ffffff;
+    padding: 32px 0 0 48px;
+    display:flex;
+    flex-direction: column;
+}
+
+.preview__component {
+  position: relative;      
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;     
+  gap: 56px; 
+  padding-left:48px;
+  
+}
+
+
+.preview__title { 
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 38px;
+color: #495057;
+}
+
