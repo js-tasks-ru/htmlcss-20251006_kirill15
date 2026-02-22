@@ -33,22 +33,39 @@ justify-content: center;
 
 }
 
-.tab-radio__input:checked ~ .tab-radio__state .tab-radio__control { 
+
+
+.tab-radio__input:checked  .tab-radio .tab-radio__state .tab-radio__control {
+  border-bottom: 5px solid #212429;
+}
+
+.tab-radio__input:checked  .tab-radio .tab-radio__state .tab-radio__label {
+  color: #212429;
+}
+
+
+.tab-radio__input:hover  .tab-radio .tab-radio__state .tab-radio__control {
     border-bottom: 5px solid #212429;
 }
 
+.tab-radio:hover .tab-radio__state .tab-radio__control {
+  border-bottom: 5px solid #212429;
+}
 
-.tab-radio__input:checked ~ .tab-radio__state .tab-radio__label { 
+.tab-radio__input:hover  .tab-radio .tab-radio__state .tab-radio__label { 
     color: #212429;
 }
 
-
-
-.tab-radio__input:hover ~ .tab-radio__state .tab-radio__control { 
-    border-bottom: 5px solid #212429;
+.tab-radio:hover .tab-radio__state .tab-radio__label {
+  color: #212429;
 }
 
+.tabs__content {
+ display: none;
+ height: 100%;
+}
 
-.tab-radio__input:hover ~ .tab-radio__state .tab-radio__label { 
-    color: #212429;
+#tab-html:checked ~ #content-html,
+#tab-css:checked ~ #content-css {
+  display: block;
 }
