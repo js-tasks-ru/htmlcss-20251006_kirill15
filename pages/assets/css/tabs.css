@@ -1,71 +1,71 @@
- .tabs__scroller { 
-    display: flex;
-    flex-direction:row;
-    gap:40px;
+.tabs__scroller {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  position: relative;
 }
 
- .tab-radio__input { 
-    position:absolute;
-    left: -100vw;
+.tabs__container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: block;
+}
+
+.tab-radio__input {
+  position: absolute;
+  left: -100vw;
+}
+
+.tab-radio__control {
+  width: 117px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.tab-radio__label {
+  width: 117px;
+  height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ACB5BD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
 }
 
 
-.tab-radio__control { 
-    width:117px;
-    height: 37px;
-    
-}
-
-
-.tab-radio__label { 
-    
-width: 117px;
-height: 24px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #ACB5BD;
-display: flex;
-align-items: center;
-justify-content: center;
-
-}
-
-
-
-.tab-radio__input:checked  .tab-radio .tab-radio__state .tab-radio__control {
+.tab-radio__input:checked + .tab-radio__state  .tab-radio__control {
   border-bottom: 5px solid #212429;
 }
 
-.tab-radio__input:checked  .tab-radio .tab-radio__state .tab-radio__label {
+.tab-radio__input:checked + .tab-radio__state  .tab-radio__control  .tab-radio__label {
   color: #212429;
 }
 
-
-.tab-radio__input:hover  .tab-radio .tab-radio__state .tab-radio__control {
-    border-bottom: 5px solid #212429;
-}
-
-.tab-radio:hover .tab-radio__state .tab-radio__control {
+.tab-radio__input:hover  .tab-radio__state  .tab-radio__control {
   border-bottom: 5px solid #212429;
 }
 
-.tab-radio__input:hover  .tab-radio .tab-radio__state .tab-radio__label { 
-    color: #212429;
-}
-
-.tab-radio:hover .tab-radio__state .tab-radio__label {
+.tab-radio__input:hover  .tab-radio__state  .tab-radio__control  .tab-radio__label {
   color: #212429;
 }
 
 .tabs__content {
- display: none;
- height: 100%;
+  display: none;
 }
 
-#tab-html:checked ~ #content-html,
-#tab-css:checked ~ #content-css {
+#tab-html:checked ~ .tabs__container #content-html,
+#tab-css:checked ~ .tabs__container #content-css {
   display: block;
 }
