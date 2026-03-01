@@ -1,22 +1,26 @@
-.tabs__scroller {
+.tabs {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
-  position: relative;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.tabs__container {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  width: 100%;
-  display: block;
+
+.tabs__scroller {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 15px;
 }
+
 
 .tab-radio__input {
   position: absolute;
   left: -100vw;
+}
+
+.tab-radio {
+  cursor: pointer;
+  display: block;
 }
 
 .tab-radio__control {
@@ -26,46 +30,61 @@
   align-items: center;
   justify-content: center;
   border-bottom: 5px solid transparent;
-  transition: border-bottom 0.3s ease;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .tab-radio__label {
-  width: 117px;
-  height: 24px;
   font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #ACB5BD;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color 0.3s ease;
+  text-align: center;
 }
 
-
-.tab-radio__input:checked + .tab-radio__state  .tab-radio__control {
+#tab-html:checked ~ .tabs__scroller label[for="tab-html"] .tab-radio__control,
+#tab-css:checked ~ .tabs__scroller label[for="tab-css"] .tab-radio__control {
   border-bottom: 5px solid #212429;
 }
 
-.tab-radio__input:checked + .tab-radio__state  .tab-radio__control  .tab-radio__label {
+#tab-html:checked ~ .tabs__scroller label[for="tab-html"] .tab-radio__label,
+#tab-css:checked ~ .tabs__scroller label[for="tab-css"] .tab-radio__label {
   color: #212429;
 }
 
-.tab-radio__input:hover  .tab-radio__state  .tab-radio__control {
+#tab-html:hover ~ .tabs__scroller label[for="tab-html"] .tab-radio__label,
+#tab-css:hover ~ .tabs__scroller label[for="tab-css"] .tab-radio__label {
+  color: #212429;
+}
+
+
+#tab-html:hover ~ .tabs__scroller label[for="tab-html"] .tab-radio__control,
+#tab-css:hover ~ .tabs__scroller label[for="tab-css"] .tab-radio__control {
   border-bottom: 5px solid #212429;
 }
 
-.tab-radio__input:hover  .tab-radio__state  .tab-radio__control  .tab-radio__label {
-  color: #212429;
+
+.tabs__container {
+  position: relative;
+  width: 100%;
 }
 
 .tabs__content {
   display: none;
+  width: 100%;
+  padding-top: 20px;
+  box-sizing: border-box;
 }
+
 
 #tab-html:checked ~ .tabs__container #content-html,
 #tab-css:checked ~ .tabs__container #content-css {
   display: block;
 }
+
+
+pre { 
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
