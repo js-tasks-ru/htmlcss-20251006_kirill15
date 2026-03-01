@@ -47,10 +47,12 @@
   border-bottom: 5px solid #212429;
 }
 
+
 #tab-html:checked ~ .tabs__scroller label[for="tab-html"] .tab-radio__label,
 #tab-css:checked ~ .tabs__scroller label[for="tab-css"] .tab-radio__label {
   color: #212429;
 }
+
 
 #tab-html:hover ~ .tabs__scroller label[for="tab-html"] .tab-radio__label,
 #tab-css:hover ~ .tabs__scroller label[for="tab-css"] .tab-radio__label {
