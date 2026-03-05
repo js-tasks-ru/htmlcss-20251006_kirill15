@@ -5,19 +5,19 @@
 }
 
 
-.header__elements { 
+.header__logo { 
     display:flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.header__components { 
+.header__menu { 
     display:flex;
     flex-direction: row;
     gap:12px;
 }
 
-.header__row {
+.header__container {
    display:flex;
    flex-direction: column;
    gap:40px;
@@ -33,11 +33,4 @@
     margin-bottom: 0;
 }
 
-.header__tabs {
-    position: relative;
-    bottom: 0;
-    right: 0;
-    padding:0;
-    width: 100%;
-}
 
