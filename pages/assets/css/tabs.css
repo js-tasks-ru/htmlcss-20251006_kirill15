@@ -13,19 +13,17 @@
 }
 
 
-.tab-radio__input {
+.tabs__radio {
   position: absolute;
   left: -100vw;
 }
 
-.tab-radio {
+.tab__radio {
   cursor: pointer;
   display: block;
 }
 
 .tab-radio__control {
-  width: 117px;
-  height: 37px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,33 +40,34 @@
   text-align: center;
 }
 
-#tab-html:checked ~ .tabs__scroller label[for="tab-html"] .tab-radio__control,
-#tab-css:checked ~ .tabs__scroller label[for="tab-css"] .tab-radio__control {
+.tabs__radio_html:checked ~ .tabs__scroller
+  .tab-radio__control_html,
+.tabs__radio_css:checked ~ .tabs__scroller
+  .tab-radio__control_css {
   border-bottom: 5px solid #212429;
 }
 
-
-#tab-html:checked ~ .tabs__scroller label[for="tab-html"] .tab-radio__label,
-#tab-css:checked ~ .tabs__scroller label[for="tab-css"] .tab-radio__label {
+.tabs__radio_html:checked ~ .tabs__scroller
+  .tab-radio__control_html .tab-radio__label,
+.tabs__radio_css:checked ~ .tabs__scroller
+  .tab-radio__control_css .tab-radio__label {
   color: #212429;
 }
 
 
-#tab-html:hover ~ .tabs__scroller label[for="tab-html"] .tab-radio__label,
-#tab-css:hover ~ .tabs__scroller label[for="tab-css"] .tab-radio__label {
-  color: #212429;
+.tab-radio:hover .tab-radio__control,
+.tab__radio:hover .tab-radio__control {
+  border-bottom: 5px solid #212429;
 }
 
-
-#tab-html:hover ~ .tabs__scroller label[for="tab-html"] .tab-radio__control,
-#tab-css:hover ~ .tabs__scroller label[for="tab-css"] .tab-radio__control {
-  border-bottom: 5px solid #212429;
+.tab-radio:hover .tab-radio__control .tab-radio__label,
+.tab__radio:hover .tab-radio__control .tab-radio__label {
+  color: #212429;
 }
 
 
 .tabs__container {
   position: relative;
-  width: 100%;
 }
 
 .tabs__content {
@@ -79,15 +78,10 @@
 }
 
 
-
-#tab-html:checked ~ .tabs__container #content-html,
-#tab-css:checked ~ .tabs__container #content-css {
+.tabs__radio_html:checked ~ .tabs__container .tabs__content_html,
+.tabs__radio_css:checked ~ .tabs__container .tabs__content_css {
   display: block;
 }
 
 
-pre { 
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
 
