@@ -73,7 +73,7 @@
 .tabs__content {
   display: none;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 56px 0 64px 42px;
   box-sizing: border-box;
 }
 
