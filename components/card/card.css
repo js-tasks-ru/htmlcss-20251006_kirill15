@@ -8,7 +8,8 @@
     background-color: #ffffff;
     padding:26px;
     box-sizing: border-box;
-    
+    text-decoration: none;
+ 
 }
 
 .card__wrapper { 

@@ -12,6 +12,8 @@
         <link rel = 'stylesheet' href = './assets/css/avatar.css'>
         <link rel = 'stylesheet' href = './assets/css/tabs.css'>
         <link rel = 'stylesheet' href = './assets/css/toggler.css'>
+        <link rel = 'stylesheet' href = './assets/css/skeleton.css'>
+        <link rel = 'stylesheet' href = './assets/css/input.css'>
     
 
     </head>
@@ -70,10 +72,17 @@
                 
         </div>
 
-        <div class = 'tabs'>
+            </div>
+            </header>
+            <main class = 'preview'>
+                <div class = 'container'>
+                    <div class = 'tabs'>
+            <input type = 'radio' class = 'tabs__radio' id = 'tabs-all' name='tabs-group' checked>
+            <input type = 'radio' class = 'tabs__radio' id = 'tabs-elements' name='tabs-group'>
+            <input type = 'radio' class = 'tabs__radio' id = 'tabs-containers' name='tabs-group'>
+            <input type = 'radio' class = 'tabs__radio' id = 'tabs-templates' name='tabs-group'>
                     <div class = 'tabs__scroller'>
-                        <label class = 'tab-radio'>
-                            <input type = 'radio' class = 'tab-radio__input'>
+                        <label for = 'tabs-all' class = 'tab-radio'>
                             <div class = 'tab-radio__state'>
                                 <div class = 'tab-radio__control'>
                                     <div class = 'tab-radio__label'>All Components</div>
@@ -81,8 +90,7 @@
                             </div>
                         </label>
                         
-                        <label class = 'tab-radio'>
-                            <input type = 'radio' class = 'tab-radio__input'>
+                        <label for = 'tabs-elements' class = 'tab-radio'>
                             <div class = 'tab-radio__state'>
                                 <div class = 'tab-radio__control'>
                                     <div class = 'tab-radio__label'>Elements</div>
@@ -90,16 +98,14 @@
                             </div>
                         </label>
                        
-                        <label class = 'tab-radio'>
-                            <input type = 'radio' class = 'tab-radio__input'>
+                        <label for = 'tabs-containers' class = 'tab-radio'>
                             <div class = 'tab-radio__state'>
                                 <div class = 'tab-radio__control'>
                                     <div class = 'tab-radio__label'>Containers</div>
                                 </div>
                             </div>
                         </label>
-                        <label class = 'tab-radio'>
-                            <input type = 'radio' class = 'tab-radio__input'>
+                        <label for = 'tabs-templates' class = 'tab-radio'>
                             <div class = 'tab-radio__state'>
                                 <div class = 'tab-radio__control'>
                                     <div class = 'tab-radio__label'>Templates</div>
@@ -107,12 +113,8 @@
                             </div>
                         </label> 
                     </div>
-                </div>
-            </div>
-            </header>
-            <main class = 'preview'>
-                <div class = 'container'>
-                    <div class = 'preview__inner'>
+                    <div class = 'tabs__content_1'>
+                        <div class = 'preview__inner'>
                         <a href = './pages/template.html' class = 'card'>
 
                             <div class = 'card__wrapper'>
@@ -337,7 +339,337 @@
                     </div>
                 </a>
             </div>
+                    </div>
 
+                    <div class = 'tabs__content_2'>
+                        <div class = 'tabs__container1'>
+                            <div class = 'tabs__cards'>
+                                <a href = './pages/template.html' class = 'card'>
+
+                            <div class = 'card__wrapper'>
+                            <div class = 'tooltip'>
+            <div class = 'tooltip__trigger'>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z" fill="#212429"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2581 8.02432C11.7926 7.94447 11.3138 8.03195 10.9066 8.27126C10.4994 8.51058 10.1901 8.88629 10.0333 9.33184C9.85006 9.85283 9.27914 10.1266 8.75815 9.94333C8.23716 9.76006 7.96339 9.18915 8.14666 8.66816C8.46013 7.77705 9.07886 7.02563 9.89327 6.547C10.7077 6.06837 11.6652 5.89341 12.5962 6.05311C13.5273 6.2128 14.3717 6.69686 14.9801 7.41953C15.5883 8.14205 15.9213 9.05648 15.92 10.0009C15.9195 11.5313 14.7849 12.5419 13.9747 13.082C13.5391 13.3725 13.1105 13.586 12.7949 13.7263C12.6356 13.7971 12.5015 13.8508 12.4049 13.8876C12.3565 13.906 12.3173 13.9203 12.2887 13.9305L12.254 13.9427L12.2429 13.9464L12.239 13.9478L12.2375 13.9483C12.2372 13.9484 12.2362 13.9487 11.92 13L12.2362 13.9487C11.7123 14.1233 11.146 13.8402 10.9713 13.3162C10.7968 12.7926 11.0794 12.2267 11.6027 12.0517L11.6014 12.0521C11.6015 12.0521 11.6016 12.052 11.6027 12.0517L11.6187 12.0461C11.6341 12.0406 11.6593 12.0314 11.6929 12.0186C11.7603 11.9929 11.8606 11.9529 11.9826 11.8987C12.2294 11.789 12.5509 11.6275 12.8653 11.4179C13.5549 10.9582 13.92 10.4691 13.92 10L13.92 9.99851C13.9207 9.52619 13.7542 9.06886 13.45 8.70753C13.1459 8.34619 12.7236 8.10417 12.2581 8.02432Z" fill="#212429"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z" fill="#212429"/>
+</svg>
+            </div>
+            <div class = 'tooltip__bubble'>
+                Bubble text
+                
+
+            </div>
+        </div>
+        </div>
+    </a>
+
+    <a href = './pages/avatar.html' class = 'card'>
+                            <div class = 'card__wrapper'>
+                            <div class  = 'avatar'>
+            <img src = './assets/images/avatar-200.jpg'
+            class = 'avatar__image'>
+        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class = 'tabs__elements'>
+                                <h4 class = 'button__title'>Buttons</h4>
+                                <div class = 'button'></div>
+                            </div>
+                            <div class = 'tabs__forms'>
+                                <h4 class = 'forms__title'>Custom form elements</h4>
+                                <div class = 'forms'>
+                                    <div class = 'form__elements'>
+                                    <label class = 'radio'>
+            <input type = 'radio' class = 'radio__input'>
+            <div class = 'radio__state'>
+                <div class = 'radio__control'>
+                    <div class = 'radio__icon'></div> 
+                </div>
+                <div class = 'radio__label'>Male</div>
+            </div>
+        </label>
+
+
+        <label class = 'radio'>
+            <input type = 'radio' class = 'radio__input'>
+            <div class = 'radio__state'>
+                <div class = 'radio__control'>
+                    <div class = 'radio__icon'></div> 
+                </div>
+                <div class = 'radio__label'>Female</div>
+            </div>
+        </label>
+
+
+
+        <label class = 'radio'>
+            <input type = 'radio' class = 'radio__input' disabled>
+            <div class = 'radio__state'>
+                <div class = 'radio__control'>
+                    <div class = 'radio__icon'></div> 
+                </div>
+                <div class = 'radio__label'>Special</div>
+            </div>
+        </label>
+        </div>
+
+        <div class = 'form__elements'>
+            <label class  = 'checkbox'>
+            <input type ='checkbox' class = 'checkbox__input'>
+            <div class = 'checkbox__state'>
+                <div class = 'checkbox__control'>
+                    <svg class = 'checkbox__icon' width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 7.00002L5 10.5L13 1.50002" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class = 'checkbox__label'>Default</div>
+            </div>
+        </label>
+
+
+        <label class  = 'checkbox'>
+            <input type ='checkbox' class = 'checkbox__input'>
+            <div class = 'checkbox__state'>
+                <div class = 'checkbox__control'>
+                    <svg class = 'checkbox__icon' width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 7.00002L5 10.5L13 1.50002" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class = 'checkbox__label'>Default</div>
+            </div>
+        </label>
+
+
+
+        <label class  = 'checkbox'>
+            <input type ='checkbox' class = 'checkbox__input'  disabled>
+            <div class = 'checkbox__state'>
+                <div class = 'checkbox__control'>
+                    <svg class = 'checkbox__icon' width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="28" height="28" rx="4" fill="#DDE2E5"/>
+</svg>
+
+
+                </div>
+                <div class = 'checkbox__label'>Disabled</div>
+            </div>
+        </label>
+        </div>
+
+
+        <div class = 'form__elements'>
+            <label class = 'toggler'>
+            <input type = 'checkbox' class = 'toggler__input'>
+            <div class = 'toggler__state'>
+                <div class = 'toggler__control'>
+                    <div class = 'toggler__icon'></div>
+                </div>
+                <div class = 'toggler__label'>Off</div>
+            </div>
+        </label>
+
+
+        <label class = 'toggler'>
+            <input type = 'checkbox' class = 'toggler__input'>
+            <div class = 'toggler__state'>
+                <div class = 'toggler__control'>
+                    <div class = 'toggler__icon'></div>
+                </div>
+                <div class = 'toggler__label'>Off</div>
+            </div>
+        </label>
+
+
+        <label class = 'toggler'>
+            <input type = 'checkbox' class = 'toggler__input' disabled>
+            <div class = 'toggler__state'>
+                <div class = 'toggler__control'>
+                    <div class = 'toggler__icon'></div>
+                </div>
+                <div class = 'toggler__label'>Disabled</div>
+            </div>
+        </label>
+        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = 'tabs__content_3'>
+                        <div class = 'tabs__container1'>
+                            <div class = 'tabs__cards'>
+                                <div class = 'card'>
+                            <div class = 'card__wrapper'>
+                                <div class = 'radio'>
+                                    <div class = 'radio__column'>
+                                <label class  = 'checkbox'>
+            <input type ='checkbox' class = 'checkbox__input'>
+            <div class = 'checkbox__state'>
+                <div class = 'checkbox__control'>
+                    <svg class = 'checkbox__icon' width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 7.00002L5 10.5L13 1.50002" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class = 'checkbox__label'>Default</div>
+            </div>
+        </label>
+
+        <label class  = 'checkbox'>
+            <input type ='checkbox' class = 'checkbox__input'>
+            <div class = 'checkbox__state'>
+                <div class = 'checkbox__control'>
+                    <svg class = 'checkbox__icon' width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 7.00002L5 10.5L13 1.50002" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                </div>
+                <div class = 'checkbox__label'>Checked</div>
+            </div>
+        </label>
+    </div>
+            <div class = 'radio__column'>              
+            <label class = 'radio__item'>
+        <input type = 'radio' class = 'radio__input'>
+        <div class = 'radio__state'>
+            <div class = 'radio__control'>
+                <div class = 'radio__icon'></div>
+            </div>
+            <div class= 'radio__label'>Default</div>
+        </div>
+    </label>
+    
+    <label class = 'radio__item'>
+        <input type = 'radio' class = 'radio__input'>
+        <div class = 'radio__state'>
+            <div class = 'radio__control'>
+                <div class = 'radio__icon'></div>
+            </div>
+            <div class= 'radio__label'>Сhecked</div>
+        </div>
+    </label>
+
+
+</div>
+</div>
+                            </div>
+                        </div>
+                        
+                        <a href = './pages/calendar.html' class = 'card'>
+                            <div class = 'card__wrapper'>
+                                <div class = 'calendar'>
+            <div class = 'calendar__title'>October 2019</div>
+            <div class = 'calendar__wrapper'>
+                    <span class = 'calender__item calendar__item_day'>Mon</span>
+                    <span class = 'calender__item calendar__item_day'>Tue</span>
+                    <span class = 'calender__item calendar__item_day'>Wen</span>
+                    <span class = 'calender__item calendar__item_day'>Thu</span>
+                    <span class = 'calender__item calendar__item_day'>Fri</span>
+                    <span class = 'calender__item calendar__item_day'>Sat</span>
+                    <span class = 'calender__item calendar__item_day'>Sun</span>
+                    <span class = 'calender__item'></span>
+                    <span class = 'calender__item'></span>
+                    <span class = 'calender__item'></span>
+                    <span class = 'calender__item'></span>
+                    <span class = 'calender__item'>1</span>
+                    <span class = 'calender__item'>2</span>
+                    <span class = 'calender__item'>3</span>
+                    <span class = 'calender__item'>4</span>
+                    <span class = 'calender__item'>5</span>
+                    <span class = 'calender__item'>6</span>
+                    <span class = 'calender__item'>7</span>
+                    <span class = 'calender__item'>8</span>
+                    <span class = 'calender__item'>9</span>
+                    <span class = 'calender__item'>10</span>
+                    <span class = 'calender__item'>11</span>
+                    <span class = 'calender__item'>12</span>
+                    <span class = 'calender__item'>13</span>
+                    <span class = 'calender__item'>14</span>
+                    <span class = 'calender__item'>15</span>
+                    <span class = 'calender__item'>16</span>
+                    <span class = 'calender__item'>17</span>
+                    <div class = 'calender__item   calendar__item_active'>18</div>
+                    <div class = 'calender__item   calendar__item_between-active'>19</div>
+                    <div class = 'calender__item   calendar__item_between-active'>20</div>
+                    <div class = 'calender__item   calendar__item_between-active'>21</div>
+                    <div class = 'calender__item   calendar__item_between-active'>22</div>
+                    <div class = 'calender__item   calendar__item_active'>23</div>
+                    <div class = 'calender__item'>24</div>
+                    <div class = 'calender__item'>25</div>
+                    <div class = 'calender__item'>26</div>
+                    <div class = 'calender__item'>27</div>
+                    <div class = 'calender__item'>28</div>
+                    <div class = 'calender__item'>29</div>
+                    <div class = 'calender__item'>30</div>
+                    <div class = 'calender__item'>31</div>    
+            </div>
+        </div>
+    </div>
+</a>
+
+                            </div>
+                            <div class = 'tabs__skeleton  tabs__width_50'>
+                                <div class = 'skeleton__content'>
+                                <h4 class = 'skeleton__title'>Skeleton</h4>
+                                <div class='skeleton'>
+        <div class='skeleton__header'>
+            <div class='skeleton__image'></div>
+            <div class = 'skeleton__column'>
+                <div class='skeleton__line skeleton__line_small'></div>
+                <div class='skeleton__line skeleton__line_medium'></div>
+            </div>
+        </div>
+        <div class = 'skeleton__column'>
+        <div class='skeleton__line skeleton__line_large'></div>
+        <div class='skeleton__line skeleton__line_large'></div>
+    </div>
+    </div>
+    </div>
+                            </div>
+                            <div class = 'tabs__forms'>
+                                <div class = 'form__title'>Custom form elements</div>
+                                <div class = 'form__container'>
+                                    <div class = 'form'>
+        <label class = 'form__label' for = 'inputFocus'>focus</label>
+        <div class = 'form__wrapper'>
+        <input type = 'text' class = 'form__input' id = 'inputFocus'>
+        </div>
+    </div>
+
+
+    <div class = 'form form_invalid'>
+        <label class = 'form__label' for = 'inputError'>error</label>
+        <div class = 'form__wrapper'>
+            <input type = 'text' class = 'form__input' id = 'inputError'>
+            <svg class = 'form__icon form__icon_invalid' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.29 3.86001L1.82 18C1.64537 18.3024 1.55296 18.6453 1.55199 18.9945C1.55101 19.3437 1.64149 19.6871 1.81442 19.9905C1.98736 20.2939 2.23672 20.5468 2.53771 20.7239C2.83869 20.901 3.1808 20.9962 3.53 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86001C13.5317 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3437 2.89726 12 2.89726C11.6563 2.89726 11.3183 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001V3.86001Z" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 9V13" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 16V16.5" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </div>
+    </div>
+
+
+    <div class = 'form form_success'>
+        <label class = 'form__label' for = 'inputSuccess'>success</label>
+        <div class = 'form__wrapper'>
+            <input type = 'text' class = 'form__input' id = 'inputSuccess'>
+            <svg  class = 'form__icon form__icon_success' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 4L12 14.01L9 11.01" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+        </div>
+    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+                    </div>
+                </div>
             </main>
             <footer class = 'footer'>
                 <div class = 'footer__wrapper'>
