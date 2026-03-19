@@ -1,0 +1,59 @@
+
+.button__container {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+}
+
+.button__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.button { 
+padding: 14px 15px 15px;
+border-radius: 8px;
+min-width: 189px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #FFFFFF;
+
+}
+
+
+.button_primary {
+    background-color: #2342C0;
+}
+
+.button_primary:hover {
+    background-color: #2342C0;
+}
+
+.button_secondary { 
+    background-color: #7048E8;
+}
+
+.button_secondary:hover { 
+    background-color: #5028C6;
+}
+
+.button_alternate  {
+    background-color: #FFFFFF;
+    border: 1px solid #ACB5BD;
+    color: #495057;
+}
+
+.button_alternate:hover { 
+    background-color: #FFFFFF;
+    border: 1px solid  #212429;
+}
+
+.button:disabled { 
+    opacity: 0.5;
+    pointer-events: none;
+}

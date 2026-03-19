@@ -7,7 +7,8 @@
     <link rel = 'stylesheet' href = './../pages/assets/css/tooltip.css'>
     <link rel = 'stylesheet' href = './../pages/assets/css/toggler.css'>
     <link rel = 'stylesheet' href = './../pages/assets/css/tabs.css'>
-    <link rel = 'stylesheet' href = './../pages/assets/css/calendar.css'>
+    <link rel = 'stylesheet' href = './../pages/assets/css/avatar.css'>
+    <link rel = 'stylesheet' href = './../pages/assets/css/buttons.css'>
     
     
     <title>Document</title>
@@ -36,7 +37,7 @@
     <div class="header__components">
       <!-- Навигация -->
       <nav class="header__nav">
-        <a href="#" class="header__nav-item">Components</a>
+        <a href="./../index.html" class="header__nav-item">Components</a>
         <a href="#" class="header__nav-item">About</a>
         <a href="#" class="header__nav-item">Contacts</a>
       </nav>
@@ -119,60 +120,24 @@
         </div>
                 <div class = 'preview__inner'>
                     <div class = 'preview__component preview__component_width_25'>
-                    <h3 class = 'preview__title'>Calendar</h3>
-                    
-                            <div class = 'calendar'>
-            <div class = 'calendar__title'>October 2019</div>
-            <div class = 'calendar__wrapper'>
-                    <span class = 'calender__item calendar__item_day'>Mon</span>
-                    <span class = 'calender__item calendar__item_day'>Tue</span>
-                    <span class = 'calender__item calendar__item_day'>Wen</span>
-                    <span class = 'calender__item calendar__item_day'>Thu</span>
-                    <span class = 'calender__item calendar__item_day'>Fri</span>
-                    <span class = 'calender__item calendar__item_day'>Sat</span>
-                    <span class = 'calender__item calendar__item_day'>Sun</span>
-                    <span class = 'calender__item'></span>
-                    <span class = 'calender__item'></span>
-                    <span class = 'calender__item'></span>
-                    <span class = 'calender__item'></span>
-                    <span class = 'calender__item'>1</span>
-                    <span class = 'calender__item'>2</span>
-                    <span class = 'calender__item'>3</span>
-                    <span class = 'calender__item'>4</span>
-                    <span class = 'calender__item'>5</span>
-                    <span class = 'calender__item'>6</span>
-                    <span class = 'calender__item'>7</span>
-                    <span class = 'calender__item'>8</span>
-                    <span class = 'calender__item'>9</span>
-                    <span class = 'calender__item'>10</span>
-                    <span class = 'calender__item'>11</span>
-                    <span class = 'calender__item'>12</span>
-                    <span class = 'calender__item'>13</span>
-                    <span class = 'calender__item'>14</span>
-                    <span class = 'calender__item'>15</span>
-                    <span class = 'calender__item'>16</span>
-                    <span class = 'calender__item'>17</span>
-                    <div class = 'calender__item   calendar__item_active'>18</div>
-                    <div class = 'calender__item   calendar__item_between-active'>19</div>
-                    <div class = 'calender__item   calendar__item_between-active'>20</div>
-                    <div class = 'calender__item   calendar__item_between-active'>21</div>
-                    <div class = 'calender__item   calendar__item_between-active'>22</div>
-                    <div class = 'calender__item   calendar__item_active'>23</div>
-                    <div class = 'calender__item'>24</div>
-                    <div class = 'calender__item'>25</div>
-                    <div class = 'calender__item'>26</div>
-                    <div class = 'calender__item'>27</div>
-                    <div class = 'calender__item'>28</div>
-                    <div class = 'calender__item'>29</div>
-                    <div class = 'calender__item'>30</div>
-                    <div class = 'calender__item'>31</div>
-                    <div></div>
-            </div>
-        </div>
+                    <h3 class = 'preview__title'>Buttons</h3>
+                             <div class="button__container">
+                                <div class="button__row button__row_active">
+                                    <button class="button button_primary">primary</button>
+                                    <button class="button button_secondary">secondary</button>
+                                    <button class="button button_alternate">alternate</button>
+                                </div>
+                                <div class="button__row button__row_disabled">
+                                    <button disabled class="button button_primary">primary</button>
+                                    <button disabled class="button button_secondary">secondary</button>
+                                    <button disabled class="button button_alternate">alternate</button>
+                                </div>
+                            </div>
     </div>
     <div class="tabs">
   <input type="radio" class="tabs__radio tabs__radio_html" id="tab-html" name="tabs" checked>
   <input type="radio" class="tabs__radio tabs__radio_css" id="tab-css" name="tabs">
+
 
   <div class="tabs__scroller">
     <label class="tab__radio" for="tab-html">
@@ -195,130 +160,88 @@
   <div class="tabs__container">
     <div id="content-html" class="tabs__content tabs__content_html">
       <div class="demo__htmlcss">
-        <pre><code class="language-html">
-&lt;div class="calendar"&gt;
-  &lt;div class="calendar__title"&gt;October 2019&lt;/div&gt;
-  &lt;div class="calendar__wrapper"&gt;
-    &lt;span class="calender__item calendar__item_day"&gt;Mon&lt;/span&gt;
-    &lt;span class="calender__item calendar__item_day"&gt;Tue&lt;/span&gt;
-    &lt;span class="calender__item calendar__item_day"&gt;Wen&lt;/span&gt;
-    &lt;span class="calender__item calendar__item_day"&gt;Thu&lt;/span&gt;
-    &lt;span class="calender__item calendar__item_day"&gt;Fri&lt;/span&gt;
-    &lt;span class="calender__item calendar__item_day"&gt;Sat&lt;/span&gt;
-    &lt;span class="calender__item calendar__item_day"&gt;Sun&lt;/span&gt;
-    &lt;span class="calender__item"&gt;&lt;/span&gt;
-    &lt;span class="calender__item"&gt;&lt;/span&gt;
-    &lt;span class="calender__item"&gt;&lt;/span&gt;
-    &lt;span class="calender__item"&gt;&lt;/span&gt;
-    &lt;span class="calender__item"&gt;1&lt;/span&gt;
-    &lt;span class="calender__item"&gt;2&lt;/span&gt;
-    &lt;span class="calender__item"&gt;3&lt;/span&gt;
-    &lt;span class="calender__item"&gt;4&lt;/span&gt;
-    &lt;span class="calender__item"&gt;5&lt;/span&gt;
-    &lt;span class="calender__item"&gt;6&lt;/span&gt;
-    &lt;span class="calender__item"&gt;7&lt;/span&gt;
-    &lt;span class="calender__item"&gt;8&lt;/span&gt;
-    &lt;span class="calender__item"&gt;9&lt;/span&gt;
-    &lt;span class="calender__item"&gt;10&lt;/span&gt;
-    &lt;span class="calender__item"&gt;11&lt;/span&gt;
-    &lt;span class="calender__item"&gt;12&lt;/span&gt;
-    &lt;span class="calender__item"&gt;13&lt;/span&gt;
-    &lt;span class="calender__item"&gt;14&lt;/span&gt;
-    &lt;span class="calender__item"&gt;15&lt;/span&gt;
-    &lt;span class="calender__item"&gt;16&lt;/span&gt;
-    &lt;span class="calender__item"&gt;17&lt;/span&gt;
-    &lt;div class="calender__item calendar__item_active"&gt;18&lt;/div&gt;
-    &lt;div class="calender__item calendar__item_between-active"&gt;19&lt;/div&gt;
-    &lt;div class="calender__item calendar__item_between-active"&gt;20&lt;/div&gt;
-    &lt;div class="calender__item calendar__item_between-active"&gt;21&lt;/div&gt;
-    &lt;div class="calender__item calendar__item_between-active"&gt;22&lt;/div&gt;
-    &lt;div class="calender__item calendar__item_active"&gt;23&lt;/div&gt;
-    &lt;div class="calender__item"&gt;24&lt;/div&gt;
-    &lt;div class="calender__item"&gt;25&lt;/div&gt;
-    &lt;div class="calender__item"&gt;26&lt;/div&gt;
-    &lt;div class="calender__item"&gt;27&lt;/div&gt;
-    &lt;div class="calender__item"&gt;28&lt;/div&gt;
-    &lt;div class="calender__item"&gt;29&lt;/div&gt;
-    &lt;div class="calender__item"&gt;30&lt;/div&gt;
-    &lt;div class="calender__item"&gt;31&lt;/div&gt;
-    &lt;div&gt;&lt;/div&gt;
+        <pre><code class="language-html">&lt;div class="button__container"&gt;
+  &lt;div class="button__row button__row_active"&gt;
+    &lt;button class="button button_primary"&gt;primary&lt;/button&gt;
+    &lt;button class="button button_secondary"&gt;secondary&lt;/button&gt;
+    &lt;button class="button button_alternate"&gt;alternate&lt;/button&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+  &lt;div class="button__row button__row_disabled"&gt;
+    &lt;button disabled class="button button_primary"&gt;primary&lt;/button&gt;
+    &lt;button disabled class="button button_secondary"&gt;secondary&lt;/button&gt;
+    &lt;button disabled class="button button_alternate"&gt;alternate&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
     </div>
 
     <div id="content-css" class="tabs__content tabs__content_css">
       <div class="demo__htmlcss">
         <pre><code class="language-css">
-.calendar { 
-background: #FFFFFF;
-border: 1px solid #ACB5BD;
+
+.button__container {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+}
+
+.button__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.button { 
+padding: 14px 15px 15px;
 border-radius: 8px;
-width: 100%;
-height: 100%;
-padding: 28px 26px 32px;
-display:flex;
-flex-direction: column;
-gap:24px;
-
-
-}
-
-.calendar__title {
-    font-family: 'Inter';
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    
-
-    
-}
-
-
-
-.calendar__wrapper { 
-    display:grid;
-    grid-template-columns: repeat(7 , 1fr);
-    grid-template-rows: repeat(7 , 1fr);
-    width: 100%;
-  
-}
-
-
-
-
-.calender__item { 
-    display: grid;            
-    justify-items: center;    
-    align-items: center; 
-    color: #334d6e; 
-    font-family: 'Source Sans Pro';
-   
-}
-
-
-.calendar__item_day { 
-    display: grid;
-    justify-items: center;
-    color: #90a0b7;
+min-width: 189px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #FFFFFF;
 
 }
 
 
-.calendar__item_active {
-    background-color: #4263eb;
-    color: #FFFFFF;
+.button_primary {
+    background-color: #2342C0;
 }
 
+.button_primary:hover {
+    background-color: #2342C0;
+}
 
-.calendar__item_between-active { 
-    background-color: #a0b1f5;
+.button_secondary { 
+    background-color: #7048E8;
+}
+
+.button_secondary:hover { 
+    background-color: #5028C6;
+}
+
+.button_alternate  {
+    background-color: #FFFFFF;
+    border: 1px solid #ACB5BD;
+    color: #495057;
+}
+
+.button_alternate:hover { 
+    background-color: #FFFFFF;
+    border: 1px solid  #212429;
+}
+
+.button:disabled { 
+    opacity: 0.5;
+    pointer-events: none;
 }
         </code></pre>
       </div>
     </div>
-  </div>
+  </div> 
+</div>
 </div>
   </div>
 

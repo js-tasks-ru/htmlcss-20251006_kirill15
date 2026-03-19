@@ -74,50 +74,13 @@ margin-bottom: 5px;
 }
 
 
-.form__title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
-  
-}
-
-
-.form__wrapper { 
+.form__container {
   display: flex;
-  flex-direction: column;
-  gap:32px;
+  flex-direction: column; 
+  gap: 10px; 
 }
 
-.form__title { 
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1.36;
-  color: #acb5bd;
-  text-transform: uppercase;
+.form__row {
+  display: flex;
+  gap: 5px; 
 }
-
-
-
-.form__container { 
-    display:flex;
-    flex-direction: row;
-    gap:3px;
-}
-
-.forms { 
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.form__elements { 
-    display:flex;
-    flex-direction: column;
-    gap:10px;
-}
-
-
-
-
-
-
