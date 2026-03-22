@@ -1,7 +1,7 @@
 .footer { 
 
     padding: 71px  0;
-    background-color: #ffffff;
+    background-color: var(--main-bg);
 }
 
 .footer__wrapper { 
@@ -23,7 +23,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 38px;
 line-height: 48px;
-color: #212429;
+color: var( --font-color);
 text-align: center;
 
 }
@@ -37,7 +37,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 text-align: center;
-color: #212429;
+color: var( --font-color);
 
 }
 

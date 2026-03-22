@@ -7,23 +7,52 @@
 @import '../../components/card/card.css';
 
 
+
+
+
 :root {
-    --white: #ffffff;
-    --black: #212429;
-    --pink: #F784AD;
-    --purple: #7048E8;
-    --blue: #374FC7;
-    --red: #F03D3E;
-    --grey-1: #F8F9FA;
-    --grey-2: #DDE2E5;
-    --grey-3: #ACB5BD;
-    --grey-4: #495057;
+  --white: #ffffff;
+  --white-2: #ffffff75;
+  --black: #212429;
+  --white-1: #F9FAFC;
+  --font-color: #212429;
+  --pink: #F784AD;
+  --purple: #7048E8;
+  --blue: #4263eb;
+  --red: #F03D3E;
+  --grey-1: #F8F9FA;
+  --grey-2: #DDE2E5;
+  --grey-3: #ACB5BD;
+  --grey-4: #495057;
 
-    --error: var(--red);
-    --success: var(--blue);
+  --input-bg: #ffffff;
+  --input-bg-disabled: var(--grey-2);
 
-    --primary: var(--blue);
-    --secondary: var(--purple);
+  
+  --calendar-day-color: #90a0b7;
+  --calendar-value-color: #334d6e;
+
+  --error: var(--red);
+  --success: var(--blue);
+  --primary: var(--blue);
+  --secondary: var(--purple);
+}
+
+html[data-theme-dark] {
+  --font-color: #ffffff75;
+  --main-bg: var(--black);
+  --grey-bg: var(--grey-4);
+  --dark-bg: var(--grey-1);
+  --card-bg: var(--black);
+  --input-bg: var(--grey-4);
+  --input-bg-disabled: var(--grey-2);
+  --text-primary: var(--white-2);
+  --calendar-day-color: #ffffff75;
+  --calendar-value-color: #ffffff75;
+  --error: var(--red);
+  --success: var(--blue);
+  --primary: var(--blue);
+  --secondary: var(--purple);
 }
 
 

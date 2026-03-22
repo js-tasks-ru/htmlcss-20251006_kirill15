@@ -1,78 +1,62 @@
-
-.checkbox__state { 
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    
+.checkbox__state {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
 }
 
-
-.checkbox__control { 
-
-width: 28px;
-height: 28px;
-background: #FFFFFF;
-border: 1px solid #DDE2E5;
-border-radius: 4px;
-display: flex;
-align-items: center;
-justify-content: center;
-
-
+.checkbox__control {
+  width: 28px;
+  height: 28px;
+  background: var(--input-bg);
+  border: 1px solid var(--grey-2);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-
-.checkbox__label { 
-
-font-family: 'Inter' , sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #495057;
-
-
+.checkbox__label {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-primary);
 }
 
-
-
-.checkbox__icon { 
-    display: none;
-    
+.checkbox__icon {
+  display: none;
+  opacity: 0; 
+  transition: opacity 0.2s ease; 
 }
-
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
-
-    border-color: #4263eb;
-    background: #4263eb;
+  border-color: var(--primary);
+  background: var(--primary);
 }
-
-
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
-    display: block;
+  display: block;
+  opacity: 1; 
 }
 
-.checkbox__input { 
-    position: absolute;
-    left: -100vw
+.checkbox__input {
+  position: absolute;
+  left: -100vw;
 }
-
 
 .checkbox__input:focus ~ .checkbox__state .checkbox__label {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.checkbox__input:disabled ~ .checkbox__state .checkbox__control { 
-
-    color:  #dde2e5 ;
-
+.checkbox__input:disabled ~ .checkbox__state .checkbox__control {
+  background: var(--input-bg-disabled);
+  border-color: var(--grey-2);
+  color: var(--grey-2);
+  transition: none;
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__label {
-    
-color: #DDE2E5;
-
-
+  color: var(--text-primary);
 }

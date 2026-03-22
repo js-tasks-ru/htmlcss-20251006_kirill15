@@ -1,6 +1,6 @@
 .preview { 
     padding: 68px  0;
-    background-color:  #F9FAFC;
+    background-color:  var( --grey-bg);
     
 }
 
@@ -8,6 +8,6 @@
     display: flex;
     flex-wrap: wrap;
     gap:30px;
-    background-color: #F9FAFC;
+    background-color: var( --grey-bg);
     
 }

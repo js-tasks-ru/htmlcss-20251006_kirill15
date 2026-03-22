@@ -5,7 +5,7 @@
     height: 367px;
     border: none;
     border-radius: 12px;
-    background-color: #ffffff;
+    background-color: var(--card-bg);
     padding:26px;
     box-sizing: border-box;
     text-decoration: none;
