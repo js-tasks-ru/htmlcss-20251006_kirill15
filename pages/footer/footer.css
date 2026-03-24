@@ -1,5 +1,6 @@
 .footer {
     padding: 56px 0;
+    background-color:  var( --grey-bg);
 }
 
 .footer__wrapper { 
@@ -18,7 +19,7 @@ font-size: 12px;
 line-height: 18px;
 letter-spacing: 0.04em;
 text-transform: uppercase;
-color: #ACB5BD;
+color: var(--font-color);
 
 
 }
