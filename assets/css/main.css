@@ -10,6 +10,7 @@
 
 
 
+
 :root {
   --white: #ffffff;
   --white-2: #ffffff75;
@@ -18,7 +19,9 @@
   --font-color: #212429;
   --pink: #F784AD;
   --purple: #7048E8;
+  --purple-2: #5028C6;
   --blue: #4263eb;
+  --blue-2: #2342C0;
   --red: #F03D3E;
   --grey-1: #F8F9FA;
   --grey-2: #DDE2E5;
@@ -28,14 +31,21 @@
   --input-bg: #ffffff;
   --input-bg-disabled: var(--grey-2);
 
-  
   --calendar-day-color: #90a0b7;
   --calendar-value-color: #334d6e;
 
   --error: var(--red);
   --success: var(--blue);
   --primary: var(--blue);
+  --primary-h: var(--blue-2);
   --secondary: var(--purple);
+  --secondary-h: var(--purple-2);
+  --button-preview-bg: var(--white);
+  --button-preview-color: var(--font-color);
+  --button-alternate-bg: var(--white);
+  --button-alternate-color: var(--grey-4);
+
+  --bg-field: var(--white);
 }
 
 html[data-theme-dark] {
@@ -53,6 +63,12 @@ html[data-theme-dark] {
   --success: var(--blue);
   --primary: var(--blue);
   --secondary: var(--purple);
+  --button-preview-bg: var(--grey-4);
+  --button-preview-color: var(--white);
+  --button-alternate-bg: var(--grey-4);
+  --button-alternate-color: var(--white);
+
+  --bg-field: var(--black); 
 }
 
 
@@ -62,6 +78,11 @@ html[data-theme-dark] {
 
 * { 
     box-sizing: border-box;
+}
+
+a {
+  color: inherit; 
+  text-decoration: none; 
 }
     
 

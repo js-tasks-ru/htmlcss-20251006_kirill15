@@ -19,7 +19,7 @@
 .radio__control {
   width: 28px;
   height: 28px;
-  background: var(--input-bg);
+  background: var(--bg-field);
   border: 1px solid var(--grey-2);
   border-radius: 14px;
   display: flex;
@@ -34,7 +34,6 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--text-primary);
-  
 }
 
 .radio__icon {
@@ -73,4 +72,12 @@
   color: var(--text-primary);
 }
 
+.radio__input:disabled ~ .radio__state .radio__label {
+  color: var(--font-color);
+}
 
+.radio__input:disabled ~ .radio__state .radio__control {
+  background: var(--input-bg-disabled);
+  border-color: var(--grey-2);
+  color: var(--grey-2);
+}

@@ -35,7 +35,7 @@
 
 .tab-radio__label {
   font: 400 16px/24px 'Inter';
-  color: #ACB5BD;
+  color: var(--dark-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,22 +47,22 @@
 #tabs-elements:checked ~ .tabs__scroller [for="tabs-elements"] .tab-radio__control,
 #tabs-containers:checked ~ .tabs__scroller [for="tabs-containers"] .tab-radio__control,
 #tabs-templates:checked ~ .tabs__scroller [for="tabs-templates"] .tab-radio__control {
-  border-color: #212429;
+  border-color: var(--dark-bg);
 }
 
 #tabs-all:checked ~ .tabs__scroller [for="tabs-all"] .tab-radio__label,
 #tabs-elements:checked ~ .tabs__scroller [for="tabs-elements"] .tab-radio__label,
 #tabs-containers:checked ~ .tabs__scroller [for="tabs-containers"] .tab-radio__label,
 #tabs-templates:checked ~ .tabs__scroller [for="tabs-templates"] .tab-radio__label {
-  color: #212429;
+  color: var(--dark-bg);
 }
 
 .tab-radio:hover .tab-radio__control {
-  border-color: #212429;
+  border-color: var(--dark-bg);
 }
 
 .tab-radio:hover .tab-radio__label {
-  color: #212429;
+  color: var(--dark-bg);
 }
 
 .tabs__content_all,

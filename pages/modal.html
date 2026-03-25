@@ -8,6 +8,7 @@
     <link rel = 'stylesheet' href = './../pages/assets/css/toggler.css'>
     <link rel = 'stylesheet' href = './../pages/assets/css/tabs.css'>
     <link rel = 'stylesheet' href = './../assets/css/modal.css'>
+    <link rel = 'stylesheet' href = './../assets/css/button.css'
     
     
     
@@ -66,7 +67,7 @@
 
         <!-- Тоглер (переключатель темы) -->
         <label class="toggler">
-          <input type="checkbox" class="toggler__input">
+          <input type="checkbox" class="toggler__input" id = theme-changer>
           <div class="toggler__state">
             <div class="toggler__control">
               <div class="toggler__icon"></div>
@@ -123,7 +124,7 @@
                     <h3 class = 'preview__title'>Modal</h3>
                     
                             <div class="container">
-        <button id='modal-open' class='modal-open'>Open modal</button>
+        <button id='modal-open' class='button button_primary modal-open'>Open modal</button>
         </div>
         <div   id='modal' class='modal'> 
             <div class='modal__container'> 
@@ -259,5 +260,6 @@
         </footer>
     </div>
     <script src="./../05-lection3/02-modal/index.js"></script>
+    <script src = "../pages/js/theme-changer.js"></script>
 </body>
 </html>

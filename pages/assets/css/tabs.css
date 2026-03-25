@@ -1,17 +1,8 @@
-.tabs {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-
 .tabs__scroller {
   display: flex;
   gap: 40px;
   margin-bottom: 15px;
 }
-
 
 .tabs__radio {
   position: absolute;
@@ -36,35 +27,31 @@
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #ACB5BD;
+  color: var(--grey-3);
   text-align: center;
 }
 
-.tabs__radio_html:checked ~ .tabs__scroller
-  .tab-radio__control_html,
-.tabs__radio_css:checked ~ .tabs__scroller
-  .tab-radio__control_css {
-  border-bottom: 5px solid #212429;
+
+.tabs__radio_html:checked ~ .tabs__scroller .tab-radio__control_html,
+.tabs__radio_css:checked ~ .tabs__scroller .tab-radio__control_css {
+  border-bottom-color: var(--tab-underline-color);
 }
 
-.tabs__radio_html:checked ~ .tabs__scroller
-  .tab-radio__control_html .tab-radio__label,
-.tabs__radio_css:checked ~ .tabs__scroller
-  .tab-radio__control_css .tab-radio__label {
-  color: #212429;
+.tabs__radio_html:checked ~ .tabs__scroller .tab-radio__control_html .tab-radio__label,
+.tabs__radio_css:checked ~ .tabs__scroller .tab-radio__control_css .tab-radio__label {
+  color: var(--tab-underline-color);
 }
 
 
 .tab-radio:hover .tab-radio__control,
 .tab__radio:hover .tab-radio__control {
-  border-bottom: 5px solid #212429;
+  border-bottom-color: var(--tab-underline-color);
 }
 
 .tab-radio:hover .tab-radio__control .tab-radio__label,
 .tab__radio:hover .tab-radio__control .tab-radio__label {
-  color: #212429;
+  color: var(--tab-underline-color);
 }
-
 
 .tabs__container {
   position: relative;
@@ -73,10 +60,10 @@
 .tabs__content {
   display: none;
   width: 100%;
-  padding-top: 56px 0 64px 42px;
+  padding: 56px 0 64px 42px;
   box-sizing: border-box;
+  color:var(--font-color);
 }
-
 
 .tabs__radio_html:checked ~ .tabs__container .tabs__content_html,
 .tabs__radio_css:checked ~ .tabs__container .tabs__content_css {

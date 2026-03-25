@@ -7,7 +7,7 @@
 .checkbox__control {
   width: 28px;
   height: 28px;
-  background: var(--input-bg);
+  background: var(--bg-field);
   border: 1px solid var(--grey-2);
   border-radius: 4px;
   display: flex;
@@ -23,7 +23,6 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--text-primary);
-  text-decoration: none;
 }
 
 .checkbox__icon {
@@ -47,7 +46,9 @@
   left: -100vw;
 }
 
+
 .checkbox__input:focus ~ .checkbox__state .checkbox__label {
+  color: var(--text-primary);
   text-decoration: underline;
 }
 
@@ -59,5 +60,5 @@
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__label {
-  color: var(--text-primary);
+  color: var(--font-color);
 }
