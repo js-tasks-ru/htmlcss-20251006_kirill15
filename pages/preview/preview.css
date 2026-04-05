@@ -60,4 +60,16 @@
 }
 
 
+@media(max-width:768px) {
+    .preview {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .preview__inner {
+    width: 100%;
+  }
+}
+
+
 

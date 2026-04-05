@@ -4,12 +4,11 @@
 }
 
 .tooltip__trigger {
-  position: relative; 
-  
+  position: relative;  
 }
 
 .tooltip__icon {
-  
+  /* Стили для иконки, если нужны */
 }
 
 .tooltip__bubble {

@@ -21,21 +21,21 @@ font-weight: 500;
 font-size: 16px;
 line-height: 19px;
 text-align: center;
-color: var(--white);
+color: var(--button-text-color);
 
 }
 
 
 .button_preview {
   background-color: var(--button-preview-bg);
-  color: var(--button-preview-color);
+  color: var(--button-text-color-pr);
   border: none;
 }
 
 
 
 .button_primary {
-    background-color: var(--primary);;
+    background-color: var(--primary);
 }
 
 .button_primary:hover {
@@ -92,4 +92,27 @@ color: var(--white);
   height: 32px;
   width:80px;
   box-sizing: border-box;
+}
+
+
+
+@media (max-width: 768px) {
+  .button__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    grid-auto-rows: auto; 
+  }
+
+  .button__row {
+    display: flex;
+    flex-direction: column; 
+    gap: 12px; 
+    width: 100%; 
+  }
+
+  .button__title { 
+    font-size: 20px;
+  }
+
 }

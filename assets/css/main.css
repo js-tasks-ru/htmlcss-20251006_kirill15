@@ -27,13 +27,12 @@
   --grey-2: #DDE2E5;
   --grey-3: #ACB5BD;
   --grey-4: #495057;
+  --preview-bg: #F9FAFC;
 
   --input-bg: #ffffff;
   --input-bg-disabled: var(--grey-2);
-
   --calendar-day-color: #90a0b7;
   --calendar-value-color: #334d6e;
-
   --error: var(--red);
   --success: var(--blue);
   --primary: var(--blue);
@@ -41,9 +40,10 @@
   --secondary: var(--purple);
   --secondary-h: var(--purple-2);
   --button-preview-bg: var(--white);
-  --button-preview-color: var(--font-color);
   --button-alternate-bg: var(--white);
   --button-alternate-color: var(--grey-4);
+  --button-text-color: var(--white);
+  --button-text-color-pr:var(--black);
 
   --bg-field: var(--white);
 }
@@ -51,6 +51,7 @@
 html[data-theme-dark] {
   --font-color: #ffffff75;
   --main-bg: var(--black);
+  --preview-bg:var(--grey-4);
   --grey-bg: var(--grey-4);
   --dark-bg: var(--grey-1);
   --card-bg: var(--black);
@@ -64,9 +65,10 @@ html[data-theme-dark] {
   --primary: var(--blue);
   --secondary: var(--purple);
   --button-preview-bg: var(--grey-4);
-  --button-preview-color: var(--white);
   --button-alternate-bg: var(--grey-4);
   --button-alternate-color: var(--white);
+  --button-text-color: var(--white-2);
+  --button-text-color-pr:var(--white-2);
 
   --bg-field: var(--black); 
 }

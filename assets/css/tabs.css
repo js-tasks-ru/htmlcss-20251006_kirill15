@@ -1,7 +1,15 @@
+.tabs {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
 
 .tabs__scroller {
   display: flex;
   gap: 40px;
+  width:100%;
+  background-color: var(--main-bg);
 }
 
 .tabs__radio {
@@ -70,7 +78,10 @@
 .tabs__content_containers,
 .tabs__content_templates {
   display: none;
+  padding-top: 68px;
 }
+
+
 
 #tabs-all:checked ~ .tabs__content_all,
 #tabs-elements:checked ~ .tabs__content_elements,
@@ -104,6 +115,29 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+
+
+@media (max-width: 768px) {
+  .tabs__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tabs__width_50 {
+    width: 100% !important;
+}
+
+.tabs__content_all,
+.tabs__content_elements,
+.tabs__content_containers,
+.tabs__content_templates {
+  display: none;
+  padding-top: 20px;
+}
+
 }
 
 

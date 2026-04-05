@@ -8,6 +8,8 @@
     <link rel = 'stylesheet' href = './../pages/assets/css/toggler.css'>
     <link rel = 'stylesheet' href = './../pages/assets/css/tabs.css'>
     <link rel = 'stylesheet' href = './../pages/assets/css/avatar.css'>
+    <link rel = 'stylesheet' href = './../pages/assets/css/burger.css'>
+    
     
     
     
@@ -16,6 +18,83 @@
 <body>
     <div class = 'page'>
         <header class="header">
+          <button class = 'header__burger' id = 'burger-menu-open'>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        </button>
+        <div class = 'burger' id = 'burger-menu'>
+            <div class = 'burger__container'>
+                <div class = 'burger__header'>
+                    <button class =  'burger__header_button' id = 'burger-menu-close' >
+                        <svg class = 'burger__icon-button' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 6L6 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 6L18 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                    </button>
+                    <svg class = 'burger__icon' width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_16770_202)">
+<rect y="1" width="30" height="30" fill="#212429"/>
+<rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+<path d="M78 0L110 32H78V0Z" fill="#212429"/>
+</g>
+<defs>
+<clipPath id="clip0_16770_202">
+<rect width="110" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                </div>
+                <div class = 'burger__divider'>
+                    <div class = 'burger__content'>
+                        <div class = 'burger__title'>Dark mode</div>
+                         <label class = 'toggler'>
+            <input type = 'checkbox' class = 'toggler__input'  id="theme-changer-burger">
+            <div class = 'toggler__state'>
+                <div class = 'toggler__control'>
+                    <div class = 'toggler__icon'></div>
+                </div>
+                <div class = 'toggler__label'></div>
+            </div>
+        </label> 
+                    </div>
+                    <div class = 'burger__divider'>
+                        <div class="burger__menu">
+          <div class="burger__menu-wrapper">
+            <div class="burger__menu-content">
+              <h4 class="burger__menu-title">Elements</h4>
+              <nav class="burger__menu-sidebar">
+                <a href="./pages/avatar.html" class="burger__menu-link">Avatar</a>
+                <a href="./pages/formElements.html" class="burger__menu-link">Custom form elements</a>
+                <a href="./pages/buttons.html" class="burger__menu-link">Button</a>
+                <a href="./pages/avatar.html" class="burger__menu-link">Avatar</a>
+                <a href="./pages/formElements.html" class="burger__menu-link">Custom form elements</a>
+                <a href="./pages/buttons.html" class="burger__menu-link">Button</a>
+              </nav>
+              <div class = 'burger__divider'></div>
+              </div>
+              <div class="burger__menu-content">
+              <h4 class="burger__menu-title">Containers</h4>
+              <nav class="burger__menu-sidebar">
+                <a href="./pages/avatar.html" class="burger__menu-link">Avatar</a>
+                <a href="./pages/formElements.html" class="burger__menu-link">Custom form elements</a>
+                <a href="./pages/buttons.html" class="burger__menu-link">Button</a>
+                <a href="./pages/avatar.html" class="burger__menu-link">Avatar</a>
+                <a href="./pages/formElements.html" class="burger__menu-link">Custom form elements</a>
+                <a href="./pages/buttons.html" class="burger__menu-link">Button</a>
+              </nav>
+              </div>
+          </div>
+        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
   <div class="header__wrapper">
     <!-- Логотип (левая часть) -->
     <div class="header__logo">
@@ -191,5 +270,6 @@
         </footer>
     </div>
     <script src = "../pages/js/theme-changer.js"></script>
+    <script src = '../pages/js/burger.js'></script>
 </body>
 </html>

@@ -45,11 +45,18 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 1.36;
-    color: var( --font-color);
+    color: var(--grey-3);
     text-transform: uppercase;
 }
 
 .accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
     display: none;
 
+}
+
+
+@media (max-width:768px) { 
+    .accordion__title { 
+        font-size: 20px;
+    }
 }

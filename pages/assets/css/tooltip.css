@@ -1,11 +1,11 @@
+
 .tooltip {
   position: relative;
   z-index: 10;
 }
 
 .tooltip__trigger {
-  position: relative; 
-  
+  position: relative;  
 }
 
 .tooltip__icon {

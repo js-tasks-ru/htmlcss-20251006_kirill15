@@ -41,3 +41,13 @@ color: var( --font-color);
 
 }
 
+
+@media (max-width: 768px) {
+
+ .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+ }
+
+}
+

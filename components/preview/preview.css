@@ -1,13 +1,23 @@
 .preview { 
-    padding: 68px  0;
-    background-color:  var( --grey-bg);
-    
+    background-color:  var(--preview-bg);
+    padding: 0 0 204px 0;
+      
 }
 
 .preview__inner { 
     display: flex;
     flex-wrap: wrap;
     gap:30px;
-    background-color: var( --grey-bg);
-    
+    background-color: var(--preview-bg); 
+}
+
+@media screen and (max-width: 768px) {
+ .preview__inner {
+  grid-template-columns: 1fr;
+ }
+
+ .preview { 
+    padding: 0 0 20px 0;
+ }
+  
 }

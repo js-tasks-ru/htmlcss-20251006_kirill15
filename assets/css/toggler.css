@@ -29,10 +29,10 @@ transition: transform 0.3s ease , background-color 0.3s ease;
 
 
 .toggler__label { 
-display:flex;
-flex-direction: row;
-justify-content: space-between;
-font-family: 'Inter', sans-serif;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -81,4 +81,7 @@ font-family: 'Inter', sans-serif;
 .toggler__input:disabled ~ .checkbox__state .checkbox__label {
   color: var(--text-primary);
 }
+
+
+
 
