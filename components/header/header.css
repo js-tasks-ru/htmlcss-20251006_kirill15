@@ -8,6 +8,14 @@
   color: var(--dark-bg);
 }
 
+.header__icon_sun { 
+  color: var(--grey-3);
+}
+
+.header__icon_sun { 
+  color: var(--grey-3);
+}
+
 .header__logo {
   display: flex;
   flex-direction: row;
