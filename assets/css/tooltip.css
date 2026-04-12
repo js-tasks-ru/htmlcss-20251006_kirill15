@@ -1,6 +1,5 @@
 .tooltip {
   position: relative;
-  z-index: 10;
 }
 
 .tooltip__trigger {
@@ -8,7 +7,7 @@
 }
 
 .tooltip__icon {
-  /* Стили для иконки, если нужны */
+  
 }
 
 .tooltip__bubble {
