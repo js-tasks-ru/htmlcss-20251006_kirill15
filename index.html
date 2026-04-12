@@ -504,16 +504,16 @@
                 </a>
                             </div>
                             <div class = 'tabs__elements'>
-                                <div class = 'button__wrapper'>
-                                <h4 class = 'button__title'>Buttons</h4>
-                            <div class="button__container">
-                                <div class="button__row button__row_active">
+                                <div class = 'tabs__section'>
+                                <h4 class = 'tabs__title'>Buttons</h4>
+                            <div class="tabs__demo">
+                                <div class="tabs__row tabs__row_active">
                                     <button class=" button button_preview">Button</button>
                                     <button class="button button_primary">primary</button>
                                     <button class="button button_secondary">secondary</button>
                                     <button class="button button_alternate">alternate</button>
                                 </div>
-                                <div class="button__row button__row_disabled">
+                                <div class="tabs__row tabs__row_disabled">
                                     <button disabled class="button button_preview">Button disabled</button>
                                     <button disabled class="button button_primary">primary</button>
                                     <button disabled class="button button_secondary">secondary</button>
@@ -523,10 +523,10 @@
                         </div>
                             </div>
                             <div class = 'tabs__forms'>
-                                <div class = 'form__wrapper'>
-                                <h4 class = 'form__title'>Custom form elements</h4>
-                                <div class = 'forms'>
-                                    <div class = 'form__elements'>
+                                <div class = 'tabs__section'>
+                                <h4 class = 'tabs__title'>Custom form elements</h4>
+                                <div class = 'tabs__demo-container'>
+                                    <div class = 'tabs__demo-group'>
                                     <label class = 'radio'>
             <input type = 'radio' class = 'radio__input'>
             <div class = 'radio__state'>
@@ -561,7 +561,7 @@
         </label>
         </div>
 
-        <div class = 'form__elements'>
+        <div class = 'tabs__demo-group'>
             <label class  = 'checkbox'>
             <input type ='checkbox' class = 'checkbox__input'>
             <div class = 'checkbox__state'>
@@ -607,7 +607,7 @@
         </div>
 
 
-        <div class = 'form__elements'>
+        <div class = 'tabs__demo-group'>
             <label class = 'toggler'>
             <input type = 'checkbox' class = 'toggler__input'>
             <div class = 'toggler__state'>
@@ -774,8 +774,8 @@
 
                             </div>
                             <div class = 'tabs__skeleton  tabs__width_50'>
-                                <div class = 'skeleton__content'>
-                                <h4 class = 'skeleton__title'>Skeleton</h4>
+                                <div class = 'tabs__section'>
+                                <h4 class = 'tabs__title'>Skeleton</h4>
                                 <div class='skeleton'>
         <div class='skeleton__header'>
             <div class='skeleton__image'></div>
@@ -792,8 +792,8 @@
     </div>
                             </div>
                             <div class = 'tabs__forms'>
-                                <div class = 'form__title'>Custom form elements</div>
-                                <div class = 'form__container'>
+                                <div class = 'tabs__title'>Custom form elements</div>
+                                <div class = 'tabs__form-container'>
                                     <div class = 'form'>
         <label class = 'form__label' for = 'inputFocus'>focus</label>
         <div class = 'form__wrapper'>
@@ -921,9 +921,9 @@
                 </div>
     </div>
 
-    <div class="modal__content">
-  <div class="modal__wrapper">
-    <div class="modal__heading">Modal</div>
+   
+  <div class="tabs__section">
+    <div class="tabs__title">Modal</div>
     <div class="tabs__modal tabs__width_50">
       <button id="modal-open" class="button button_primary modal-open">
         Open modal
@@ -947,11 +947,12 @@
       </div>
     </div>
   </div>
-</div>
+  
+
 
     <div class="tabs__accordion">
-        <div class="accordion__wrapper">
-        <h4 class="accordion__title">Accordion</h4>
+        <div class="tabs__section">
+        <h4 class="tabs__title">Accordion</h4>
             <div class = 'accordion'> 
             <details class = "accordion__section" open>
             <summary class = 'accordion__header'>

@@ -69,19 +69,6 @@
     width: 100%;
 }
 
-.skeleton__content {
-  display: flex;
-  flex-direction: column;
-  gap: 32px; 
-}
-
-.skeleton__title {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1.36;
-  color: var(--grey-3);
-  text-transform: uppercase;
-}
 
 @keyframes skeleton-shine {
   0% { left: -100%; }
@@ -89,13 +76,7 @@
 }
 
 @media (max-width:768px) { 
-    .skeleton__title {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 1.36;
-    }
     
-
     .skeleton__line::before,
     .skeleton__image::before {
         animation-duration: 1.2s;
