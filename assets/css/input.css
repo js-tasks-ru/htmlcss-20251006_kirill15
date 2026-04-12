@@ -2,7 +2,7 @@
   position: relative;
   display:inline-block;
   }
-  
+
 .form__input {
 width: 350px;
 height: 58px;
@@ -70,6 +70,12 @@ margin-bottom: 5px;
 
 .form_invalid .form__icon_invalid { 
   display:block;
+}
+
+.forms-preview { 
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
 }
 
 
