@@ -60,11 +60,44 @@
     .preview {
     width: 100%;
     padding: 0 16px;
+    display: block;
+    overflow-x: auto;
+    grid-template-columns: 0;
+    gap:0px;
   }
 
   .preview__inner {
+    margin-top: 2rem;
     width: 100%;
+    padding: 0;
+    gap:0px;
   }
+
+  .preview__component { 
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 1rem;
+  }
+
+  .preview__tabs { 
+    display:flex;
+    flex-direction: column;
+  }
+
+  .preview__title { 
+    font-size: 20px;
+  }
+
+  .preview__component_width_25 {
+  width: 100%;
+  padding-right: 16px;
+}
+
+.preview__component_width_50 { 
+  width: 100%;
+  padding-right: 16px;
+}
 }
 
 
