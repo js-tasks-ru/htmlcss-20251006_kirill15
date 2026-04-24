@@ -91,11 +91,10 @@ margin-bottom: 5px;
   }
 
   .form__input {
-    width: 350px;
-    height: 58px;
-    padding: 17px 48px 13px 24px;
-    font-size: 16px;
-    line-height: 1.4;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    padding: 17px 40px 13px 20px; 
   }
 
   
