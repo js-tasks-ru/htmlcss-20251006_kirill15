@@ -44,6 +44,13 @@
   display: none;
 }
 
+
+.radio__column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
 .radio__input:checked ~ .radio__state .radio__control {
   border: 2px solid var(--primary);
 }

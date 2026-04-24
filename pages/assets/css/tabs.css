@@ -1,7 +1,7 @@
 .tabs__scroller {
   display: flex;
   gap: 40px;
-  margin-bottom: 15px;
+  padding: 0 16px;
 }
 
 .tabs__radio {
@@ -60,7 +60,7 @@
 .tabs__content {
   display: none;
   width: 100%;
-  padding: 56px 0 64px 42px;
+  padding: 50px 0 0 15px;
   box-sizing: border-box;
   color:var(--font-color);
 }
@@ -70,5 +70,15 @@
   display: block;
 }
 
+
+@media all and (max-width:768px) { 
+  .tabs__container { 
+    padding: 1.5rem 0;
+    overflow: hidden;
+  }
+  .tabs__content { 
+    padding: 0  15px;
+  }
+}
 
 

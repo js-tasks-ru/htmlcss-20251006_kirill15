@@ -4,10 +4,12 @@
   margin: 0 auto;
   position: relative;
   background-color: var(--main-bg);
+  overflow: hidden;
 }
 
 .tabs__wrapper {
   background-color: var(--main-bg);
+  overflow-x: auto;
 }
 
 .tabs__scroller {

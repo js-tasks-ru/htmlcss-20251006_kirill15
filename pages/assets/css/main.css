@@ -12,7 +12,7 @@
   --white-2: #ffffff75;
   --black: #212429;
   --white-1: #F9FAFC;
-  --font-color: #212429; /* Исходный цвет текста */
+  --font-color: #212429; 
   --pink: #F784AD;
   --purple: #7048E8;
   --purple-2: #5028C6;
@@ -70,6 +70,7 @@ html[data-theme-dark] {
 
   --bg-field: var(--black);
   --tab-underline-color: var(--grey-1);
+  --dark-bg: var(--grey-1)
 }
 
 

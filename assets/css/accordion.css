@@ -34,13 +34,13 @@
   justify-content: space-between;
 }
 
-.accordion__icon {
-  transition: transform 0.3s ease;
-  transform: rotate(0deg);
-}
+.accordion__icon  {
+   transition: transform 0.3s ease;
+   transform: rotate(0deg);
+ }
 
 .accordion__section[open] .accordion__icon {
-  transform: rotate(180deg);
+   transform: rotate(180deg);
 }
 
 .accordion__wrapper {

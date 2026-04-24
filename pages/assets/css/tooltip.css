@@ -1,7 +1,6 @@
 
 .tooltip {
   position: relative;
-  
 }
 
 .tooltip__trigger {
@@ -46,4 +45,10 @@
 
 .tooltip__trigger:hover ~ .tooltip__bubble {
   opacity: 1;
+}
+
+@media all and (max-width:768px) { 
+  .tooltip { 
+    margin: 70px 0 30px 35px;
+  }
 }

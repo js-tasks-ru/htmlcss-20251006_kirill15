@@ -57,3 +57,9 @@ color: #FFFFFF;
     opacity: 0.5;
     pointer-events: none;
 }
+
+@media all and (max-width:768px) { 
+  .button__row {
+    grid-template-columns: 1fr;
+  }
+}
