@@ -1,6 +1,7 @@
 .menu { 
     width: 229px;
     background-color:  var( --grey-bg);
+    margin: 0 auto;
 }
 
 .menu__wrapper { 

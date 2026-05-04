@@ -23,6 +23,8 @@
   --grey-2: #DDE2E5;
   --grey-3: #ACB5BD;
   --grey-4: #495057;
+  --grey-bg:var(--grey-1);
+  --card-bg:var(--white);
    
   --input-bg: #ffffff;
   --input-bg-disabled: var(--grey-2);

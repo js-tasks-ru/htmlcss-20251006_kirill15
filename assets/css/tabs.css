@@ -7,6 +7,10 @@
   overflow: hidden;
 }
 
+.tabs .tabs__content .bg-grey {
+  background-color: black;
+}
+
 .tabs__wrapper {
   background-color: var(--main-bg);
   overflow-x: auto;
@@ -34,7 +38,7 @@
 }
 
 .tabs__control_all {
-  width: 117px;
+  width: 120px;
 }
 
 .tabs__control_elements {

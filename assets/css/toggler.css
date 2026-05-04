@@ -24,6 +24,7 @@ height: 24px;
 background: var(--grey-2);
 border-radius: 16px;
 transition: transform 0.3s ease , background-color 0.3s ease;
+transform: scale(0.9);
 
 }
 
@@ -53,7 +54,7 @@ transition: transform 0.3s ease , background-color 0.3s ease;
 
 .toggler__input:checked ~ .toggler__state .toggler__icon { 
     background-color: var(--white); 
-    transform: translateX(24px);
+    transform: translateX(24px) scale(0.9);
     
 }
 
