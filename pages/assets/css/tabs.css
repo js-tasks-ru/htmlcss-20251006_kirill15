@@ -56,7 +56,6 @@
 
 .tabs__container {
   position: relative;
-  overflow-x: scroll;
 }
 
 .tabs__content {
@@ -76,6 +75,7 @@
 @media all and (max-width:768px) { 
   .tabs__container { 
     padding: 1.5rem 0;
+    overflow-x: scroll;
   }
   .tabs__content { 
     padding: 0  15px;
