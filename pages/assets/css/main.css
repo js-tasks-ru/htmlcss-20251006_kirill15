@@ -45,7 +45,7 @@
 
   --bg-field: var(--white);
   --tab-underline-color: #212429;
-
+  --button-text-color: var(--white);
   
   --text-primary: var(--font-color); 
 }
