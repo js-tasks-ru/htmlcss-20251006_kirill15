@@ -1,0 +1,88 @@
+
+.toggler__state { 
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.toggler__control { 
+
+width: 52px;
+height: 28px;
+background: var(--white);
+border: 1px solid var(--grey-2);
+border-radius: 16px;
+padding: 2px;
+
+}
+
+
+.toggler__icon { 
+width: 24px;
+height: 24px;
+background: var(--grey-2);
+border-radius: 16px;
+transition: transform 0.3s ease , background-color 0.3s ease;
+transform: scale(0.9);
+
+}
+
+
+.toggler__label { 
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+
+
+
+.toggler__input:checked ~ .toggler__state .toggler__control { 
+
+    background-color: var(--primary);
+    
+}
+
+
+.toggler__input:checked ~ .toggler__state .toggler__icon { 
+    background-color: var(--white); 
+    transform: translateX(24px) scale(0.9);
+    
+}
+
+
+.toggler__input { 
+    position: absolute;
+    left: -100vh;
+}
+
+.toggler__input:not(:checked) + .toggler__state .toggler__icon--day {
+  color: #0D6EFD;
+}
+.toggler__input:not(:checked) + .toggler__state .toggler__icon--night {
+  color: #6C757D;
+}
+
+
+.toggler__input:checked + .toggler__state .toggler__icon--day {
+  color: #6C757D;
+}
+.toggler__input:checked + .toggler__state .toggler__icon--night {
+  color: #0D6EFD;
+}
+
+.toggler__input:disabled ~ .checkbox__state .checkbox__label {
+  color: var(--text-primary);
+}
+
+
+
+

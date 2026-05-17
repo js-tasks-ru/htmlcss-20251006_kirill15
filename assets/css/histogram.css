@@ -1,0 +1,92 @@
+.histogram {
+  width: 100%;
+}
+
+.histogram__block {
+  padding: 16px 24px 24px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.histogram__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.histogram__header-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.histogram__title {
+  font-family: 'Inter';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--font-color);
+  opacity: 80%;
+  margin: 0;
+}
+
+.histogram__value {
+  color: var(--text-primary);
+  font-family: 'Inter';
+  font-size: 20px;
+  line-height: 26px;
+  margin: 6px 0 0 0;
+}
+
+.histogram__link {
+  text-decoration: none;
+  color: blue;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.histogram__chart {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+  gap: 1px;
+}
+
+@keyframes growColumn {
+  from {
+    height: 0%;
+  }
+  to {
+    height: var(--target-height);
+  }
+}
+
+.histogram__column {
+  background-color: blue;
+  flex-grow: 1;
+  animation: growColumn 0.8s ease-out forwards;
+  height: var(--target-height);
+}
+
+.histogram__column_short {
+  --target-height: 20%;
+}
+
+.histogram__column_medium {
+  --target-height: 40%;
+}
+
+.histogram__column_large {
+  --target-height: 60%;
+}
+
+.histogram__column_huge {
+  --target-height: 80%;
+}
+
+.histogram__column_full {
+  --target-height: 100%;
+}

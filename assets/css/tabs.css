@@ -1,0 +1,225 @@
+.tabs {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--main-bg);
+  overflow: hidden;
+}
+
+.tabs .tabs__content .bg-grey {
+  background-color: black;
+}
+
+.tabs__wrapper {
+  background-color: var(--main-bg);
+  overflow-x: auto;
+}
+
+.tabs__scroller {
+  display: flex;
+  gap: 40px;
+  max-width: 1110px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.tabs__radio {
+  position: absolute;
+  left: -100vw;
+}
+
+.tabs__control {
+  height: 37px;
+  border-bottom: 5px solid transparent;
+  transition: border-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs__control_all {
+  width: 120px;
+}
+
+.tabs__control_elements {
+  width: 70px;
+}
+
+.tabs__control_containers {
+  width: 83px;
+}
+
+.tabs__control_templates {
+  width: 79px;
+}
+
+.tabs__label {
+  font: 400 16px/24px 'Inter';
+  color: var(--dark-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  transition: color 0.3s ease;
+}
+
+#tabs-all:checked ~ .tabs__wrapper .tabs__scroller [for="tabs-all"] .tabs__control,
+#tabs-elements:checked ~ .tabs__wrapper .tabs__scroller [for="tabs-elements"] .tabs__control,
+#tabs-containers:checked ~ .tabs__wrapper .tabs__scroller [for="tabs-containers"] .tabs__control,
+#tabs-templates:checked ~ .tabs__wrapper .tabs__scroller [for="tabs-templates"] .tabs__control {
+  border-color: var(--dark-bg);
+}
+
+#tabs-all:checked ~ .tabs__wrapper .tabs__scroller [for="tabs-all"] .tabs__label,
+#tabs-elements:checked ~ .tabs__wrapper .tabs__scroller [for="tabs-elements"] .tabs__label,
+#tabs-containers:checked ~ .tabs__wrapper .tabs__scroller [for="tabs-containers"] .tabs__label,
+#tabs-templates:checked ~ .tabs__wrapper .tabs__scroller [for="tabs-templates"] .tabs__label {
+  color: var(--dark-bg);
+}
+
+.tabs__tab:hover .tabs__control {
+  border-color: var(--dark-bg);
+}
+
+.tabs__tab:hover .tabs__label {
+  color: var(--dark-bg);
+}
+
+.tabs__content {
+  display: none;
+  padding-top: 68px;
+  background-color: var(--preview-bg);
+}
+
+#tabs-all:checked ~ .tabs__content_all,
+#tabs-elements:checked ~ .tabs__content_elements,
+#tabs-containers:checked ~ .tabs__content_containers,
+#tabs-templates:checked ~ .tabs__content_templates {
+  display: block;
+}
+
+.tabs__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs__cards {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.tabs__width_50 {
+  width: 50%;
+}
+
+.tabs__layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tabs__section { 
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.tabs__demo { 
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+}
+
+.tabs__row { 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.tabs__title { 
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.36;
+  color: var(--grey-3);
+  text-transform: uppercase;
+}
+
+.tabs__demo-container { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tabs__demo-group { 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tabs__form-container { 
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+@media (max-width: 768px) {
+  .tabs__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tabs__demo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    grid-auto-rows: auto; 
+  }
+
+  .tabs__row {
+    display: flex;
+    flex-direction: column; 
+    gap: 12px; 
+    width: 100%; 
+  }
+
+  .tabs__forms,
+  .tabs__demo-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .tabs__form-container { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tabs__width_50 {
+    width: 100% !important;
+  }
+
+  .tabs__content_all,
+  .tabs__content_elements,
+  .tabs__content_containers,
+  .tabs__content_templates {
+    display: none;
+    padding-top: 20px;
+  }
+
+  .tabs__layout { 
+    width: 100%;
+  }
+
+  .tabs__title { 
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
